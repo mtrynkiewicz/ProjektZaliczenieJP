@@ -31,10 +31,11 @@ public class Main
 // tworzymy sesje:
         Session session = factory.getCurrentSession();
 
+
         Employees emp1 = new Employees();
         emp1.setName("Czesław");
         emp1.setSurname("Czesany");
-        emp1.setRatings(0.0);
+        emp1.setRating(0.0);
         emp1.setTotalIncome(0.0);
 
         session.beginTransaction();
@@ -43,10 +44,17 @@ public class Main
         System.out.println("Czesiek Czesany: "+prof1.getProffesionName());
 
         prof1.addEmployee(emp1);
-        session.save(prof1);
+        session.save(emp1);
+
+        Employees emp2 = session.get(Employees.class,1);
+
+        session.delete(emp2);
 
         session.getTransaction().commit();
 
+        session.close();
+
+        factory.close();
         int z =3;
     }
 }

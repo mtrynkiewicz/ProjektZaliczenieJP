@@ -13,8 +13,7 @@
         polaczeniu, dlatego podaje w urlu mój TimeZone, można go sprawdzic w javie:
         TimeZone.getDefault().getID()
          -->
-        <property name="connection.url">jdbc:mysql://localhost:3306/mojaBaza?
-            serverTimezone=Europe/Warsaw</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/mojaBaza?serverTimezone=Europe/Belgrade</property>
         <property name="connection.username">root</property>
         <property name="connection.password">MyNewPass</property>
         <!-- Pula polaczen, do testow tworzy 1 polaczenie: -->

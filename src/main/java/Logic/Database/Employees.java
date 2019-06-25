@@ -22,8 +22,8 @@ public class Employees
     @JoinColumn(name="ProffesionId")
     private Proffesions ProffesionId;
 
-    @Column(name="Ratings")
-    private double Ratings;
+    @Column(name="Rating")
+    private double Rating;
 
     @Column(name="TotalIncome")
     private double TotalIncome;
@@ -42,14 +42,6 @@ public class Employees
 
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public double getRatings() {
-        return Ratings;
-    }
-
-    public void setRatings(double ratings) {
-        Ratings = ratings;
     }
 
     public double getTotalIncome() {
@@ -71,4 +63,11 @@ public class Employees
     {
     }
 
+    public double getRating() {
+        return Rating;
+    }
+
+    public void setRating(double rating) {
+        Rating = rating;
+    }
 }
