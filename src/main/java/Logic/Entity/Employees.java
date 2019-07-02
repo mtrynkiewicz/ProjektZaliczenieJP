@@ -1,4 +1,4 @@
-package Logic.Database;
+package Logic.Entity;
 
 import javax.persistence.*;
 

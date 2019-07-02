@@ -1,10 +1,9 @@
-import Logic.Database.Employees;
-import Logic.Database.Proffesions;
+import Logic.Entity.Employees;
+import Logic.Entity.Proffesions;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import java.sql.Time;
 import java.util.Calendar;
 import java.util.TimeZone;
 
