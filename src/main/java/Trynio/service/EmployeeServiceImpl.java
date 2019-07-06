@@ -1,11 +1,10 @@
 package Trynio.service;
 
 import Trynio.dao.EmployeeDao;
-import Trynio.entity.Employees;
+import Trynio.entity.employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.TransactionScoped;
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -17,17 +16,17 @@ public class EmployeeServiceImpl implements EmployeeService
 
     @Override
     @Transactional
-    public List<Employees> getEmployees()
+    public List<employee> getEmployees()
     {
-        List<Employees> employees = employeeDao.getEmployees();
+        List<employee> employees = employeeDao.getEmployees();
         return employees;
     }
 
     @Override
     @Transactional
-    public void saveBook(Employees employee)
+    public void saveEmployee(employee employee)
     {
-        employeeDao.saveBook(employee);
+        employeeDao.saveEmployee(employee);
     }
 
 }

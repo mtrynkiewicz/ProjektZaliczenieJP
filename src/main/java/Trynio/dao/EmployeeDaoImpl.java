@@ -1,6 +1,6 @@
 package Trynio.dao;
 
-import Trynio.entity.Employees;
+import Trynio.entity.employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -16,19 +16,19 @@ public class EmployeeDaoImpl implements EmployeeDao
     private SessionFactory sessionFactory;
 
     @Override
-    public List<Employees> getEmployees() {
+    public List<employee> getEmployees() {
         //sesja hibernate
         Session currentSession = sessionFactory.getCurrentSession();
         //zapytanie
         ///
-        String s = "FROM Trynio.entity.Employees";
+        String s = "FROM Trynio.entity.employee";
         Query query = currentSession.createQuery(s);
         List employees = query.getResultList();
         return employees;
     }
 
     @Override
-    public void saveBook(Employees employee)
+    public void saveEmployee(employee employee)
     {
         Session session = sessionFactory.getCurrentSession();
         session.save(employee);

@@ -1,11 +1,12 @@
 package Trynio.dao;
 
-import Trynio.entity.Employees;
+
+import Trynio.entity.employee;
 
 import java.util.List;
 
 public interface EmployeeDao {
-    List<Employees> getEmployees();
+    List<employee> getEmployees();
 
-    void saveBook(Employees employee);
+    void saveEmployee(employee employee);
 }

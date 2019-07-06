@@ -1,12 +1,12 @@
 package Trynio.service;
 
-import Trynio.entity.Employees;
+import Trynio.entity.employee;
 
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employees> getEmployees();
+    List<employee> getEmployees();
 
-    public void saveBook(Employees employee);
+    public void saveEmployee(employee employee);
 
 }

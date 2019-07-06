@@ -12,17 +12,15 @@
             <th>Surname</th>
             <th>Rating</th>
             <th>TotalIncome</th>
-            <th>Proffesion</th>
         </tr>
-        <c:forEach var="employees" items="${employee}" >
-            <tr>
-                <td>${employee.Name}</td>
-                <td>${employee.Surname}</td>
-                <td>${employee.Rating}</td>
-                <td>${employee.TotalIncome}</td>
-                <td>${employee.ProffesionId.nazwa}</td>
-            </tr>
-        </c:forEach>
+        <%--<c:forEach var="employees" items="${employee}" >--%>
+            <%--<tr>--%>
+                <%--<td>${employee.Name}</td>--%>
+                <%--<td>${employee.Surname}</td>--%>
+                <%--<td>${employee.Rating}</td>--%>
+                <%--<td>${employee.TotalIncome}</td>--%>
+            <%--</tr>--%>
+        <%--</c:forEach>--%>
     </table>
 </div>
 <div>

@@ -1,7 +1,7 @@
 package Trynio.controller;
 
 
-import Trynio.entity.Employees;
+import Trynio.entity.employee;
 import Trynio.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,7 +24,7 @@ public class EmployeeController
     @GetMapping("/list")
     public String listEmpolyees(Model model)
     {
-        List<Employees> employees = employeeService.getEmployees();
+        List<employee> employees = employeeService.getEmployees();
         model.addAttribute("employees",employees);
         return "employeesList";
     }
@@ -32,15 +32,15 @@ public class EmployeeController
     @GetMapping
     public String addForm(Model model)
     {
-        Employees employee = new Employees();
+        employee employee = new employee();
         model.addAttribute("employee",employee);
         return "addEmployeeForm";
     }
 
     @PostMapping("/saveBook")
-    public String saveBook(@ModelAttribute("employee") Employees employees)
+    public String saveBook(@ModelAttribute("employee") employee employees)
     {
-        employeeService.saveBook(employees);
+        employeeService.saveEmployee(employees);
         return "redirect:/employees/list";
     }
 

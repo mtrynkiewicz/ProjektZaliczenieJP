@@ -5,12 +5,18 @@
          version="4.0">
     <display-name>hello18</display-name>
     <absolute-ordering />
+
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/view/index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
     <servlet>
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>Trynio/webapp/WEB-INF/crud.xml</param-value>
+            <param-value>/WEB-INF/crud.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
