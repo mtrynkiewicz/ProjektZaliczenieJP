@@ -9,11 +9,16 @@ import java.util.List;
 @Table(name = "proffessions")
 public class proffession
 {
-    public proffession(){}
+    public proffession()
+    {
+        employees = new ArrayList<employee>();
+    }
 
     public proffession(String proffessionsName)
     {
         this.name= proffessionsName;
+        employees = new ArrayList<employee>();
+
     }
 
     @Id
@@ -33,11 +38,10 @@ public class proffession
 
     public void addEmployees(employee employee)
     {
-        if(employees.isEmpty())
+        if(employees == null)
         {
            employees = new ArrayList<>();
         }
-        employee.setProffession(this);
         employees.add(employee);
     }
 
@@ -46,7 +50,7 @@ public class proffession
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
     public void setId(int id) {
         this.id = id;
@@ -54,11 +58,11 @@ public class proffession
 
     @Override
     public String toString() {
-        return "Zawód: " + this.name + "\n";
+        return this.name ;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {

@@ -12,7 +12,10 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
   private static java.util.List<String> _jspx_dependants;
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_input_path_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_hidden_path_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_form_modelAttribute_method_action;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_select_path;
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -22,12 +25,18 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
 
   public void _jspInit() {
     _jspx_tagPool_form_input_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_forEach_var_items = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_form_hidden_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_form_modelAttribute_method_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_form_select_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
     _jspx_tagPool_form_input_path_nobody.release();
+    _jspx_tagPool_c_forEach_var_items.release();
+    _jspx_tagPool_form_hidden_path_nobody.release();
     _jspx_tagPool_form_form_modelAttribute_method_action.release();
+    _jspx_tagPool_form_select_path.release();
   }
 
   public void _jspService(HttpServletRequest request, HttpServletResponse response)
@@ -54,6 +63,8 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("<html>\r\n");
       out.write("<head>\r\n");
@@ -106,6 +117,10 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
           out.write("        <tr>\r\n");
           out.write("            <td><label>Name:</label></td>\r\n");
           out.write("            <td>");
+          if (_jspx_meth_form_hidden_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
+          out.write("</td>\r\n");
+          out.write("            <td>");
           if (_jspx_meth_form_input_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
           out.write("</td>\r\n");
@@ -119,14 +134,19 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
           out.write("        </tr>\r\n");
           out.write("        <tr>\r\n");
           out.write("            <td><label>Proffession:</label></td>\r\n");
-          out.write("            <td>");
-          if (_jspx_meth_form_input_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+          out.write("            <td>\r\n");
+          out.write("                ");
+          if (_jspx_meth_form_select_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
             return true;
-          out.write("</td>\r\n");
+          out.write("\r\n");
+          out.write("            </td>\r\n");
           out.write("        </tr>\r\n");
           out.write("        <tr>\r\n");
-          out.write("            <td><label></label></td>\r\n");
+          out.write("        </tr>\r\n");
+          out.write("        <tr>\r\n");
           out.write("            <td><input type=\"submit\" value=\"Save\" class=\"save\" /></td>\r\n");
+          out.write("        </tr>\r\n");
+          out.write("        <tr>\r\n");
           out.write("        </tr>\r\n");
           out.write("        </tbody>\r\n");
           out.write("    </table>\r\n");
@@ -145,6 +165,32 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
     } finally {
       _jspx_th_form_form_0.doFinally();
       _jspx_tagPool_form_form_modelAttribute_method_action.reuse(_jspx_th_form_form_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_0 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_0.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_0.setPath("id");
+    int[] _jspx_push_body_count_form_hidden_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_0 = _jspx_th_form_hidden_0.doStartTag();
+      if (_jspx_th_form_hidden_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_0.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_0);
     }
     return false;
   }
@@ -201,28 +247,83 @@ public final class addEmployeeForm_jsp extends org.apache.jasper.runtime.HttpJsp
     return false;
   }
 
-  private boolean _jspx_meth_form_input_2(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+  private boolean _jspx_meth_form_select_0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
-    //  form:input
-    org.springframework.web.servlet.tags.form.InputTag _jspx_th_form_input_2 = (org.springframework.web.servlet.tags.form.InputTag) _jspx_tagPool_form_input_path_nobody.get(org.springframework.web.servlet.tags.form.InputTag.class);
-    _jspx_th_form_input_2.setPageContext(_jspx_page_context);
-    _jspx_th_form_input_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
-    _jspx_th_form_input_2.setPath("proffession");
-    int[] _jspx_push_body_count_form_input_2 = new int[] { 0 };
+    //  form:select
+    org.springframework.web.servlet.tags.form.SelectTag _jspx_th_form_select_0 = (org.springframework.web.servlet.tags.form.SelectTag) _jspx_tagPool_form_select_path.get(org.springframework.web.servlet.tags.form.SelectTag.class);
+    _jspx_th_form_select_0.setPageContext(_jspx_page_context);
+    _jspx_th_form_select_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_select_0.setPath("proffession");
+    int[] _jspx_push_body_count_form_select_0 = new int[] { 0 };
     try {
-      int _jspx_eval_form_input_2 = _jspx_th_form_input_2.doStartTag();
-      if (_jspx_th_form_input_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      int _jspx_eval_form_select_0 = _jspx_th_form_select_0.doStartTag();
+      if (_jspx_eval_form_select_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("                    ");
+          if (_jspx_meth_c_forEach_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_select_0, _jspx_page_context, _jspx_push_body_count_form_select_0))
+            return true;
+          out.write("\r\n");
+          out.write("                ");
+          int evalDoAfterBody = _jspx_th_form_select_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_form_select_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
         return true;
       }
     } catch (Throwable _jspx_exception) {
-      while (_jspx_push_body_count_form_input_2[0]-- > 0)
+      while (_jspx_push_body_count_form_select_0[0]-- > 0)
         out = _jspx_page_context.popBody();
-      _jspx_th_form_input_2.doCatch(_jspx_exception);
+      _jspx_th_form_select_0.doCatch(_jspx_exception);
     } finally {
-      _jspx_th_form_input_2.doFinally();
-      _jspx_tagPool_form_input_path_nobody.reuse(_jspx_th_form_input_2);
+      _jspx_th_form_select_0.doFinally();
+      _jspx_tagPool_form_select_path.reuse(_jspx_th_form_select_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_select_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_select_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_select_0);
+    _jspx_th_c_forEach_0.setVar("prof");
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${proffessionsList}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
+      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\r\n");
+          out.write("                        <option value=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${prof}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write('"');
+          out.write('>');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${prof.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</option>\r\n");
+          out.write("                    ");
+          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_0.doFinally();
+      _jspx_tagPool_c_forEach_var_items.reuse(_jspx_th_c_forEach_0);
     }
     return false;
   }

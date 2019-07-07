@@ -11,7 +11,8 @@ public class employee
         this.surname = surname;
         this.rating = rating;
         this.dailyIncome = dailyIncome;
-    };
+    }
+
 
     public employee() {}
 
@@ -32,14 +33,20 @@ public class employee
     @Column(name = "dailyIncome")
     private float dailyIncome;
 
-    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.REFRESH})
+    @ManyToOne
     @JoinColumn(name = "proffession_id")
     private proffession proffession;
 
+    public int getId() {
+        return this.id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -47,7 +54,7 @@ public class employee
     }
 
     public String getSurname() {
-        return surname;
+        return this.surname;
     }
 
     public void setSurname(String surname) {
@@ -55,7 +62,7 @@ public class employee
     }
 
     public float getRating() {
-        return rating;
+        return this.rating;
     }
 
     public void setRating(float rating) {
@@ -63,7 +70,7 @@ public class employee
     }
 
     public float getDailyIncome() {
-        return dailyIncome;
+        return this.dailyIncome;
     }
 
     public void setDailyIncome(float dailyIncome) {
@@ -71,10 +78,11 @@ public class employee
     }
 
     public proffession getProffession() {
-        return proffession;
+        return this.proffession;
     }
 
-    public void setProffession(proffession proffession) {
+    public void setProffession(proffession proffession)
+    {
         this.proffession = proffession;
     }
 
@@ -82,8 +90,8 @@ public class employee
     public String toString() {
         return "Sprzedawca{" +
                 "id=" + id +
-                ", imie='" + name +
-                ", nazwisko + '\''" + surname+
+                ", imie=" + name +
+                ", nazwisko=" + surname+
                 " " + proffession +
                 '}';
     }

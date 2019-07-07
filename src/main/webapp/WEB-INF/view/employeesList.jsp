@@ -15,10 +15,23 @@
         </tr>
         <c:forEach var="employee" items="${employees}" >
             <tr>
+                <c:url var="update" value="/employees/employeeUpdate">
+                    <c:param name="employeeId" value="${employee.id}"/>
+                </c:url>
+
+                <c:url var="delete" value="/employees/employeeDelete">
+                    <c:param name="employeeId" value="${employee.id}"/>
+                </c:url>
+
+
                 <td>${employee.name}</td>
                 <td>${employee.surname}</td>
                 <td>${employee.rating}</td>
                 <td>${employee.dailyIncome}</td>
+                <td>${employee.proffession.name}</td>
+                <td><a href="${update}" >update</a> </td>
+                <td><a href="${delete}" >delete</a> </td>
+
             </tr>
         </c:forEach>
     </table>

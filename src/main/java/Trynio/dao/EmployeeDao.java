@@ -6,7 +6,11 @@ import Trynio.entity.employee;
 import java.util.List;
 
 public interface EmployeeDao {
-    List<employee> getEmployees();
+    List getEmployees();
 
     void saveEmployee(employee employee);
+
+    employee findById(int employeeId);
+
+    void deleteEmployee(employee employeeObj);
 }
