@@ -24,8 +24,8 @@
     </table>
 </div>
 <div>
-    <input type="button" value="Add Book"
-           onclick="window.location.href='formadd';return false;" />
+    <input type="button" value="Add Employee"
+           onclick="window.location.href='addEmployee';return false;" />
 </div>
 
 </body>

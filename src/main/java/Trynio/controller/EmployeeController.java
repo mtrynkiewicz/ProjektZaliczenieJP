@@ -29,7 +29,7 @@ public class EmployeeController
         return "employeesList";
     }
 
-    @GetMapping
+    @GetMapping("/addEmployee")
     public String addForm(Model model)
     {
         employee employee = new employee();
@@ -37,7 +37,7 @@ public class EmployeeController
         return "addEmployeeForm";
     }
 
-    @PostMapping("/saveBook")
+    @PostMapping("/saveEmployee")
     public String saveBook(@ModelAttribute("employee") employee employees)
     {
         employeeService.saveEmployee(employees);
