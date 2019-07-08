@@ -40,6 +40,10 @@
     <input type="button" value="Add Employee"
            onclick="window.location.href='addEmployee';return false;" />
 </div>
+<div>
+    <input type="button" value="Back to menu"
+           onclick="window.location.href='tryShowMenu';return false;" />
+</div>
 
 </body>
 

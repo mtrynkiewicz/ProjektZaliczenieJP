@@ -12,8 +12,8 @@ ADD Employe
         <tbody>
         <tr>
             <td><label>Name:</label></td>
-            <td><form:hidden path="id"/></td>
             <td><form:input path="name" /></td>
+            <td><form:hidden path="id"/></td>
         </tr>
         <tr>
             <td><label>Surname:</label></td>

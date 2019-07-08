@@ -45,8 +45,20 @@ public class EmployeeDaoImpl implements EmployeeDao
     }
 
     @Override
+    @Transactional
     public void deleteEmployee(employee employeeObj) {
         Session session = sessionFactory.getCurrentSession();
-        session.delete("employees",employeeObj);
+//        session.delete("employees",employeeObj);
+
+        String hql = "DELETE FROM employee "  +
+                "WHERE id = :employee_id";
+        Query query = session.createQuery(hql);
+        query.setParameter("employee_id", employeeObj.getId());
+
+        System.out.println();
+        System.out.println(employeeObj.getId());
+        System.out.println();
+
+        int result = query.executeUpdate();
     }
 }

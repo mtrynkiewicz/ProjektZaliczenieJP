@@ -24,5 +24,14 @@ dependencies
     compile group: 'org.springframework', name: 'spring-orm', version: '5.1.7.RELEASE'
     compile group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.4.2.Final'
     compile group: 'org.hibernate', name: 'hibernate-c3p0', version: '5.4.2.Final'
+
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.7.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-web', version:'5.1.5.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config',
+            version: '5.1.5.RELEASE'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+    providedCompile group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version:'2.3.3'
+    compile group: 'org.springframework.security', name: 'spring-security-crypto',
+            version: '5.1.5.RELEASE'
 }
 

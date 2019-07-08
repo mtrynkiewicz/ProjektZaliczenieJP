@@ -24,9 +24,6 @@ public class ProffessionDaoImpl implements ProffessionDao
         //zapytanie
         ///
         String s = "FROM proffession";
-        System.out.println();
-        System.out.println(s);
-        System.out.println();
         Query<proffession> query = currentSession.createQuery(s,proffession.class);
         return query.getResultList();
     }

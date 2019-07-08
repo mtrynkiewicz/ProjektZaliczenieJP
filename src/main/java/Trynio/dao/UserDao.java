@@ -1,4 +1,6 @@
 package Trynio.dao;
 
-public class UserDao {
+public interface UserDao
+{
+    boolean isLoggedIn(String userName, String password);
 }

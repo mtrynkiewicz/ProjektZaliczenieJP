@@ -6,6 +6,7 @@ import Trynio.entity.proffession;
 import Trynio.service.EmployeeService;
 import Trynio.service.ProffessionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,7 @@ public class EmployeeController
     @Autowired
     private ProffessionService proffessionService;
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/list")
     public String listEmpolyees(Model model)
     {
@@ -46,26 +48,7 @@ public class EmployeeController
     @PostMapping("/saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") employee e)
     {
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
-        System.out.println("profesja");
-
         proffession  p = e.getProffession();
-        System.out.println(p.getId());
-        System.out.println(p.getName());
-        System.out.println(p.toString());
-        System.out.println();
-
-
-        System.out.println();
-        System.out.println();
-        System.out.println(p.getEmployees());
-
-        p.addEmployees(e);
-        System.out.println(p.getEmployees());
-
         List<proffession> p1 = proffessionService.getProffessions();
 
         for (proffession _p :
@@ -79,41 +62,20 @@ public class EmployeeController
                 e.setProffession(_p);
             }
         }
-
-
-        System.out.println();
-
-        System.out.println("pracownik");
-        System.out.println(e.getId());
-        System.out.println(e.getName());
-        System.out.println(e.getSurname());
-        System.out.println(e.toString());
-
-        System.out.println("po");
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
-//        proffession  p = e.getProffession();
-//        p.addEmployees(e);
-
-
         employeeService.saveEmployee(e);
         return "redirect:/employees/list";
-
-
     }
 
-    @GetMapping("employeeUpdate")
+    @GetMapping("employeeDelete")
     public String deleteBookForm(@RequestParam("employeeId")int employeeId, Model model){
 
         employee singleEmployee = employeeService.getEmployee(employeeId);
         employeeService.deleteEmployeeOnId(singleEmployee);
 
-        return "addEmployeeForm";
+        return "redirect:/employees/list";
     }
 
-    @GetMapping("employeeDelete")
+    @GetMapping("employeeUpdate")
     public String updateBookForm(@RequestParam("employeeId")int employeeId, Model model){
         employee singleEmployee = employeeService.getEmployee(employeeId);
         model.addAttribute("employee",singleEmployee);
@@ -121,6 +83,6 @@ public class EmployeeController
         List<proffession> proffessions = proffessionService.getProffessions();
         model.addAttribute("proffessionsList",proffessions);
 
-        return "redirect:/employees/list";
+        return "addEmployeeForm";
     }
 }
