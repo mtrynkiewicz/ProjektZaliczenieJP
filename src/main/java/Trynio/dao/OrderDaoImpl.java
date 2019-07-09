@@ -35,7 +35,7 @@ public class OrderDaoImpl implements OrderDao
     }
 
     @Override
-    @org.springframework.transaction.annotation.Transactional
+    @Transactional
     public order getSingleOrderById(int id)
     {
         Session session = sessionFactory.getCurrentSession();

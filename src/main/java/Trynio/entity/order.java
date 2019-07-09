@@ -1,5 +1,7 @@
 package Trynio.entity;
 
+import org.springframework.security.core.parameters.P;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -13,7 +15,7 @@ public class order
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private String id;
+    private int id;
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
@@ -47,7 +49,7 @@ public class order
 //    }
 
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name="orderPositions",
             joinColumns = @JoinColumn(name="order_id"),
@@ -67,6 +69,11 @@ public class order
         items.remove(item);
     }
 
+    public Set<orderItem> getItems()
+    {
+        return items;
+    }
+
     public order(Trynio.entity.employee employee, float discountPercent, float totalValue) {
         this.employee = employee;
         this.discountPercent = discountPercent;
@@ -77,11 +84,11 @@ public class order
     }
 
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

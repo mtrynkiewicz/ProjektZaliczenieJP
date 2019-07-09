@@ -18,7 +18,7 @@
                     <tr>
                         <c:forEach var="singleOrder" items="${hasSetKeyOfEmpValuesOfOrder.get(employee)}" >
 
-                            <c:url var="showSingleOrder" value="orders/show">
+                            <c:url var="showSingleOrder" value="/orders/show">
                                 <c:param name="orderId" value="${singleOrder.id}"/>
                             </c:url>
 

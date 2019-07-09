@@ -8,19 +8,25 @@
 <div>
     <table>
         <tr>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Rating</th>
-            <th>TotalIncome</th>
+            <th>Order id</th>
+            <th>Order discount</th>
+            <th>Order Total Value</th>
         </tr>
         <c:forEach var="employee" items="${hasSetKeyOfEmpValuesOfOrder.keySet()}" >
            <tr>
                <td>${employee.name} ${employee.surname}
                     <tr>
-                        <c:forEach var="order" items="${hasSetKeyOfEmpValuesOfOrder.get(employee)}" >
-                            <td>${order.id}</td>
-                            <td>${order.discountPercent}</td>
-                            <td>${order.totalValue}</td>
+                        <c:forEach var="singleOrder" items="${hasSetKeyOfEmpValuesOfOrder.get(employee)}" >
+
+                            <c:url var="showSingleOrder" value="/orders/show">
+                                <c:param name="orderId" value="${singleOrder.id}"/>
+                            </c:url>
+
+                            <td>${singleOrder.id}</td>
+                            <td>${singleOrder.discountPercent}</td>
+                            <td>${singleOrder.totalValue}</td>
+                            <td><a href="${showSingleOrder}" >show Order</a> </td>
+
                         </c:forEach>
                     </tr>
                </td>

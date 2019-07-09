@@ -2,7 +2,9 @@ package Trynio.controller;
 
 import Trynio.entity.employee;
 import Trynio.entity.order;
+import Trynio.entity.orderItem;
 import Trynio.service.EmployeeService;
+import Trynio.service.OrderItemService;
 import Trynio.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,6 +26,8 @@ public class OrderController
     @Autowired
     private EmployeeService employeeService;
 
+    @Autowired
+    private OrderItemService orderItemService;
 
     @GetMapping("/showOrders")
     public String showAvailableOrders(Model model)
@@ -37,12 +41,14 @@ public class OrderController
         return "showOrdersGruppedByEmployees";
     }
 
-    @GetMapping("orders/show")
+    @GetMapping("/show")
     public String showOrderDetails(@RequestParam("orderId")int orderId, Model model)
     {
         order o = orderService.getSingleOrderById(orderId);
         model.addAttribute("currentOrder",o);
 
+        List<orderItem> items = orderItemService.orderItemsForOrder(o);
+        model.addAttribute("orderItems",items);
 
 
         return "orderDetails";
