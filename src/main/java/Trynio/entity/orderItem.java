@@ -59,47 +59,47 @@ public class orderItem
         this.containsAlcohol = containsAlcohol;
     }
 
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "singleOrderItem",
-            cascade = CascadeType.ALL)
-    private List<orderPosition> orderPositions;
-
-    public void setOrderPositions(List<orderPosition> positions) {
-        this.orderPositions= positions;
-    }
-
-    public void addEmployees(orderPosition position)
-    {
-        if(orderPositions== null)
-        {
-            orderPositions= new ArrayList<>();
-        }
-        orderPositions.add(position);
-    }
-
-    public List<orderPosition> getOrderPositions() {
-        return orderPositions;
-    }
-
-
-//    @ManyToMany
-//    @JoinTable(
-//            name="orderPositions",
-//            joinColumns = @JoinColumn(name="orderItem_Id"),
-//            inverseJoinColumns = @JoinColumn(name="order_id")
-//    )
-//    private Set<order> orders;
-//    public void addOrder(order o){
-//        if (orders == null)
-//            orders = new HashSet<>();
-//        //autor.addKsiazka(this);
-//        orders.add(o);
+//    @OneToMany(fetch = FetchType.LAZY,mappedBy = "singleOrderItem",
+//            cascade = CascadeType.ALL)
+//    private List<orderPosition> orderPositions;
+//
+//    public void setOrderPositions(List<orderPosition> positions) {
+//        this.orderPositions= positions;
 //    }
-//    public void removeOrder(order o){
-//        if (orders == null)
-//            return;
-//        //autor.addKsiazka(this);
-//        orders.remove(o);
+//
+//    public void addEmployees(orderPosition position)
+//    {
+//        if(orderPositions== null)
+//        {
+//            orderPositions= new ArrayList<>();
+//        }
+//        orderPositions.add(position);
 //    }
+//
+//    public List<orderPosition> getOrderPositions() {
+//        return orderPositions;
+//    }
+
+
+    @ManyToMany
+    @JoinTable(
+            name="orderPositions",
+            joinColumns = @JoinColumn(name="orderItem_Id"),
+            inverseJoinColumns = @JoinColumn(name="order_id")
+    )
+    private Set<order> orders;
+    public void addOrder(order o){
+        if (orders == null)
+            orders = new HashSet<>();
+        //autor.addKsiazka(this);
+        orders.add(o);
+    }
+    public void removeOrder(order o){
+        if (orders == null)
+            return;
+        //autor.addKsiazka(this);
+        orders.remove(o);
+    }
 
 
 }

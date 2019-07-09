@@ -15,7 +15,6 @@ public class employee
         this.dailyIncome = dailyIncome;
     }
 
-
     public employee() {}
 
     @Id
@@ -88,6 +87,9 @@ public class employee
         this.proffession = proffession;
     }
 
+    @OneToMany(fetch = FetchType.LAZY,
+            mappedBy = "employee",
+            cascade = CascadeType.ALL)
     private List<order> orders;
 
     public void setOrders(List<order> orders) {
@@ -106,9 +108,6 @@ public class employee
     public List<order> getOrders() {
         return orders;
     }
-
-
-
 
     @Override
     public String toString() {

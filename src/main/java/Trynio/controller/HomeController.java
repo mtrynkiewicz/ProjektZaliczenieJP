@@ -37,8 +37,9 @@ public class HomeController
 
     @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     @RequestMapping(value = "/showOrders", method = RequestMethod.GET)
-    public String showOrders(ModelMap model) {
-        return "adminMenu";
+    public String showOrders(ModelMap model)
+    {
+        return "redirect:/orders/showOrders";
     }
 
     @RequestMapping(value = "/showEmployee", method = RequestMethod.GET)
