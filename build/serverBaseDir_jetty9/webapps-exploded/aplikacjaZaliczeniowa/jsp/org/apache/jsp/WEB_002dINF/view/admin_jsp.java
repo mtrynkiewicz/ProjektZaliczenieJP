@@ -53,8 +53,8 @@ public final class admin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<table>\r\n");
       out.write("    <tr>Strona Admina</tr>\r\n");
       out.write("    <tr>\r\n");
-      out.write("        <form action = \"showEmployee\" method = \"GET\">\r\n");
-      out.write("            <input type = \"submit\" value = \"Pokaz liste uzytkownikow\" />\r\n");
+      out.write("        <form action = \"tryShowMenu\" method = \"GET\">\r\n");
+      out.write("            <input type = \"submit\" value = \"menu\" />\r\n");
       out.write("        </form>\r\n");
       out.write("    </tr>\r\n");
       out.write("    <tr></tr>\r\n");

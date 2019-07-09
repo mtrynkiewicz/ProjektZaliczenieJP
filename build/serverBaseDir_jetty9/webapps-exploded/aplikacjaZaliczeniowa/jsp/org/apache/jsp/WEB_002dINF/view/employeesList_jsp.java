@@ -82,6 +82,10 @@ public final class employeesList_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("    <input type=\"button\" value=\"Add Employee\"\r\n");
       out.write("           onclick=\"window.location.href='addEmployee';return false;\" />\r\n");
       out.write("</div>\r\n");
+      out.write("<div>\r\n");
+      out.write("    <input type=\"button\" value=\"Back to menu\"\r\n");
+      out.write("           onclick=\"window.location.href='backToMenu';return false;\" />\r\n");
+      out.write("</div>\r\n");
       out.write("\r\n");
       out.write("</body>\r\n");
       out.write("\r\n");

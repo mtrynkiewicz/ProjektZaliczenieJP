@@ -1,6 +1,8 @@
 package Trynio.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "employees")
@@ -85,6 +87,28 @@ public class employee
     {
         this.proffession = proffession;
     }
+
+    private List<order> orders;
+
+    public void setOrders(List<order> orders) {
+        this.orders = orders;
+    }
+
+    public void addOrder(order order)
+    {
+        if(orders == null)
+        {
+            orders = new ArrayList<>();
+        }
+        orders.add(order);
+    }
+
+    public List<order> getOrders() {
+        return orders;
+    }
+
+
+
 
     @Override
     public String toString() {

@@ -85,4 +85,11 @@ public class EmployeeController
 
         return "addEmployeeForm";
     }
+
+    @GetMapping("backToMenu")
+    public String backToMenu(Model model)
+    {
+        return "redirect:/tryShowMenu";
+    }
+
 }

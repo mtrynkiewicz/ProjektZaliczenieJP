@@ -42,7 +42,7 @@
 </div>
 <div>
     <input type="button" value="Back to menu"
-           onclick="window.location.href='tryShowMenu';return false;" />
+           onclick="window.location.href='backToMenu';return false;" />
 </div>
 
 </body>
