@@ -33,6 +33,7 @@ public class EmployeeController
         return "employeesList";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/addEmployee")
     public String addForm(Model model)
     {
@@ -45,6 +46,7 @@ public class EmployeeController
         return "addEmployeeForm";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping("/saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") employee e)
     {
@@ -63,6 +65,7 @@ public class EmployeeController
         return "redirect:/employees/list";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("employeeDelete")
     public String deleteBookForm(@RequestParam("employeeId")int employeeId, Model model){
 
@@ -72,6 +75,7 @@ public class EmployeeController
         return "redirect:/employees/list";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("employeeUpdate")
     public String updateBookForm(@RequestParam("employeeId")int employeeId, Model model){
         employee singleEmployee = employeeService.getEmployee(employeeId);
@@ -83,6 +87,7 @@ public class EmployeeController
         return "addEmployeeForm";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("backToMenu")
     public String backToMenu(Model model)
     {

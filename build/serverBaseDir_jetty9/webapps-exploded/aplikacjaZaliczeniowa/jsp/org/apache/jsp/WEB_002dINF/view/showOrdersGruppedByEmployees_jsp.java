@@ -115,7 +115,7 @@ public final class showOrdersGruppedByEmployees_jsp extends org.apache.jasper.ru
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${employee.surname}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\r\n");
-          out.write("                    <tr>\r\n");
+          out.write("                    </tr>\r\n");
           out.write("                        ");
           if (_jspx_meth_c_forEach_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_0, _jspx_page_context, _jspx_push_body_count_c_forEach_0))
             return true;
@@ -159,7 +159,7 @@ public final class showOrdersGruppedByEmployees_jsp extends org.apache.jasper.ru
       if (_jspx_eval_c_forEach_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
         do {
           out.write("\r\n");
-          out.write("\r\n");
+          out.write("                        <tr>\r\n");
           out.write("                            ");
           if (_jspx_meth_c_url_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_c_forEach_1, _jspx_page_context, _jspx_push_body_count_c_forEach_1))
             return true;
@@ -194,7 +194,7 @@ public final class showOrdersGruppedByEmployees_jsp extends org.apache.jasper.ru
           out.write("                            <td><a href=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${delete}", java.lang.String.class, (PageContext)_jspx_page_context, null));
           out.write("\" >delete</a> </td>\r\n");
-          out.write("\r\n");
+          out.write("                        </tr>\r\n");
           out.write("                        ");
           int evalDoAfterBody = _jspx_th_c_forEach_1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

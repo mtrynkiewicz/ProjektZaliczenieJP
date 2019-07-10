@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="707dc9c8-563d-42fb-9238-9a38fb66180e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/addOrderItemToOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderItemForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrderItemsList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/OrderPositionComponentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/OrderPositionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/controller/RestaurantTableController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/EmployeeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/EmployeeDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderItemDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderItemDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/dao/OrderItemDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/entity/orderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/entity/orderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Trynio/service/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gretty_ports.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/gretty_ports.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/adminMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/orderDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/orderDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/adminMenu_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/adminMenu_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/index_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/orderDetails_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/orderDetails_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/showOrdersGruppedByEmployees_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/showOrdersGruppedByEmployees_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/user_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty9/webapps-exploded/aplikacjaZaliczeniowa/jsp/org/apache/jsp/WEB_002dINF/view/user_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Trynio/controller/OrderPositionComponentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Trynio/controller/OrderPositionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Trynio/controller/RestaurantTableController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderPositionComponentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderPositionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/controller/RestaurantTableController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/dao/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/dao/EmployeeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderItemDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/dao/OrderItemDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/entity/order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/entity/order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/entity/orderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/entity/orderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/entity/orderPosition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trynio/service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminMenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/orderDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/orderDetails.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -172,7 +113,7 @@
           <entry key="bat" value="1" />
           <entry key="gradle" value="6" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="213" />
+          <entry key="java" value="214" />
           <entry key="jsp" value="84" />
           <entry key="sql" value="1" />
           <entry key="txt" value="1" />
@@ -183,7 +124,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="213" />
+          <entry key="JAVA" value="214" />
           <entry key="JSP" value="84" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="1" />
@@ -194,8 +135,8 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="gradle" value="21" />
-          <entry key="java" value="9704" />
-          <entry key="jsp" value="2333" />
+          <entry key="java" value="9709" />
+          <entry key="jsp" value="2355" />
           <entry key="txt" value="23" />
           <entry key="xml" value="585" />
         </counts>
@@ -203,8 +144,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="21" />
-          <entry key="JAVA" value="9704" />
-          <entry key="JSP" value="2333" />
+          <entry key="JAVA" value="9709" />
+          <entry key="JSP" value="2355" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="XML" value="585" />
         </counts>
@@ -213,20 +154,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="48" column="33" selection-start-line="48" selection-end-line="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="88">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -245,15 +200,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
               <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrderItemsList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -311,8 +257,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="28" />
+            <state relative-caret-position="-3">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -323,8 +269,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="323">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2774#2775#0" expanded="true" />
@@ -1003,13 +949,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Trynio/service/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderItemForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrderItemsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Trynio/entity/order.java" />
         <option value="$PROJECT_DIR$/src/main/java/Trynio/entity/orderItem.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp" />
       </list>
     </option>
   </component>
@@ -1025,7 +971,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -1141,7 +1087,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562723692018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562725020109" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1283,12 +1229,12 @@
       <workItem from="1562362235676" duration="7024000" />
       <workItem from="1562369794978" duration="1620000" />
       <workItem from="1562508085130" duration="28546000" />
-      <workItem from="1562623779969" duration="31801000" />
+      <workItem from="1562623779969" duration="33127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91503000" />
+    <option name="totallyTimeSpent" value="92829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1303,7 +1249,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -1316,7 +1262,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.35264054" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.19931857" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29301533" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2504259" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32879046" />
@@ -1389,13 +1335,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java</url>
-          <line>61</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java</url>
-          <line>68</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1699,18 +1645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminMenu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -1830,18 +1764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="60" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2774#2775#0" expanded="true" />
-            <element signature="e#2820#2821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1893,27 +1815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderItemForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1927,7 +1832,48 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/createOrderForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="48" column="33" selection-start-line="48" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Trynio/controller/OrderItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showOrdersGruppedByEmployees.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
         </state>
       </provider>
     </entry>

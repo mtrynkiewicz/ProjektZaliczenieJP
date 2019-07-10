@@ -304,13 +304,14 @@ public final class createOrderForm_jsp extends org.apache.jasper.runtime.HttpJsp
           out.write("\r\n");
           out.write("                        <option value=\"");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${emp}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\">\r\n");
-          out.write("                                ");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${emp}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\r\n");
-          out.write("                                ");
-          out.write("\r\n");
-          out.write("                        </option>\r\n");
+          out.write('"');
+          out.write('>');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${emp.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write(' ');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${emp.surname}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write(' ');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${emp.proffession.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</option>\r\n");
           out.write("                    ");
           int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

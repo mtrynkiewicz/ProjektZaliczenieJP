@@ -24,10 +24,7 @@ ADD Order
             <td>
                 <form:select path="employee">
                     <c:forEach var="emp" items="${employeeList}" >
-                        <option value="${emp}">
-                                ${emp}
-                                <%--${emp.name} ${emp.surname} ${emp.proffession.name}--%>
-                        </option>
+                        <option value="${emp}">${emp.name} ${emp.surname} ${emp.proffession.name}</option>
                     </c:forEach>
                 </form:select>
             </td>

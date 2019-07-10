@@ -15,9 +15,9 @@
         <c:forEach var="employee" items="${hasSetKeyOfEmpValuesOfOrder.keySet()}" >
            <tr>
                <td>${employee.name} ${employee.surname}
-                    <tr>
+                    </tr>
                         <c:forEach var="singleOrder" items="${hasSetKeyOfEmpValuesOfOrder.get(employee)}" >
-
+                        <tr>
                             <c:url var="showSingleOrder" value="/orders/show">
                                 <c:param name="orderId" value="${singleOrder.id}"/>
                             </c:url>
@@ -37,7 +37,7 @@
                             <td><a href="${showSingleOrder}" >show Order items</a> </td>
                             <td><a href="${update}" >update</a> </td>
                             <td><a href="${delete}" >delete</a> </td>
-
+                        </tr>
                         </c:forEach>
                     </tr>
                </td>

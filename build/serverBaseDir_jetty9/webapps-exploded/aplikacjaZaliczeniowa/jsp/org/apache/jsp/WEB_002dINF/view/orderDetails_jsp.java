@@ -94,12 +94,6 @@ public final class orderDetails_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("           onclick=\"window.location.href='addItemToOrder?currentOrderId=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${currentOrder.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("';return false;\" />\r\n");
-      out.write("    ");
-      out.write("\r\n");
-      out.write("        ");
-      out.write("\r\n");
-      out.write("    ");
-      out.write("\r\n");
       out.write("</div>\r\n");
       out.write("<div>\r\n");
       out.write("    <input type=\"button\" value=\"Back to menu\"\r\n");

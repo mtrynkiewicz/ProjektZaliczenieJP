@@ -73,7 +73,7 @@ public final class createOrderItemForm_jsp extends org.apache.jasper.runtime.Htt
         return;
       out.write("\r\n");
       out.write("<input type=\"button\" value=\"Back to menu\"\r\n");
-      out.write("       onclick=\"window.location.href='backToMenu';return false;\" />\r\n");
+      out.write("       onclick=\"window.location.href='/backToOrderItemList';return false;\" />\r\n");
       out.write("</body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
