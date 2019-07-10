@@ -49,10 +49,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</head>\r\n");
       out.write("<body>\r\n");
       out.write("<table>\r\n");
-      out.write("    <tr>Witaj</tr>\r\n");
+      out.write("    Wybierz uprawnienia użytkownika\r\n");
       out.write("    <tr>\r\n");
-      out.write("        <form action = \"tryShowMenu\" method = \"GET\">\r\n");
-      out.write("            <input type = \"submit\" value = \"menu\"/>\r\n");
+      out.write("        <form action = \"showLoginUser\" method = \"GET\">\r\n");
+      out.write("            <input type = \"submit\" value = \"user\"/>\r\n");
+      out.write("        </form>\r\n");
+      out.write("        <form action = \"showLoginAdmin\" method = \"GET\">\r\n");
+      out.write("            <input type = \"submit\" value = \"admin\"/>\r\n");
       out.write("        </form>\r\n");
       out.write("    </tr>\r\n");
       out.write("</table>\r\n");

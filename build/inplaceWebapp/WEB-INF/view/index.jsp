@@ -12,10 +12,13 @@
 </head>
 <body>
 <table>
-    <tr>Witaj</tr>
+    Wybierz uprawnienia użytkownika
     <tr>
-        <form action = "tryShowMenu" method = "GET">
-            <input type = "submit" value = "menu"/>
+        <form action = "showLoginUser" method = "GET">
+            <input type = "submit" value = "user"/>
+        </form>
+        <form action = "showLoginAdmin" method = "GET">
+            <input type = "submit" value = "admin"/>
         </form>
     </tr>
 </table>

@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>Order</title>
@@ -40,8 +41,8 @@
     </table>
 </div>
 <div>
-    <input type="button" value="Add Item"
-           onclick="window.location.href='addItem';return false;" />
+    <input type="button" value="Add Item to Order"
+           onclick="window.location.href='addItemToOrder?currentOrderId=${currentOrder.id}';return false;" />
 </div>
 <div>
     <input type="button" value="Back to menu"

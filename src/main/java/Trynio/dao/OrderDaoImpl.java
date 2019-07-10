@@ -47,5 +47,21 @@ public class OrderDaoImpl implements OrderDao
         return o;
     }
 
+    @Override
+    @Transactional
+    public void saveOrder(order o)
+    {
+        Session session = sessionFactory.getCurrentSession();
+        session.saveOrUpdate(o);
+    }
+
+    @Override
+    @Transactional
+    public void deleteOrder(order o)
+    {
+        Session session = sessionFactory.getCurrentSession();
+        session.delete(o);
+    }
+
 
 }

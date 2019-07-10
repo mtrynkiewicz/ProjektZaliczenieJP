@@ -11,4 +11,7 @@ public interface OrderDao
     List<order> orderListForEmployee(employee emp);
     order getSingleOrderById(int id);
 
+    void saveOrder(order o);
+
+    void deleteOrder(order o);
 }

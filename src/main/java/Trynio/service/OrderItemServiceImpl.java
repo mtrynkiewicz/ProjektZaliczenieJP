@@ -22,4 +22,31 @@ public class OrderItemServiceImpl implements OrderItemService
     {
         return orderItemDao.orderItemsForOrder(o);
     }
+
+    @Override
+    @Transactional
+    public void saveOrderItem(orderItem newOrderItem)
+    {
+        orderItemDao.saveOrderItem(newOrderItem);
+    }
+
+    @Override
+    @Transactional
+    public List<orderItem> getAllOrderItems()
+    {
+        return orderItemDao.getAllOrderItems();
+    }
+
+    @Override
+    @Transactional
+    public orderItem getItemById(int itemId) {
+        return orderItemDao.getItemById(itemId);
+    }
+
+    @Override
+    @Transactional
+    public void deleteItem(orderItem item)
+    {
+        orderItemDao.deleteItem(item);
+    }
 }

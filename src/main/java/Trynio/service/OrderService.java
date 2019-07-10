@@ -13,4 +13,8 @@ public interface OrderService
     HashMap<employee,List<order>> getAllOrdersForEmployees(List<employee> empList);
 
     order getSingleOrderById(int id);
+
+    void saveOrder(order o);
+
+    void deleteOrder(order o);
 }

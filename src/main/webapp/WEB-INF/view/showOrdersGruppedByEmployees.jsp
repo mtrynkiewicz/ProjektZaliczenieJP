@@ -4,7 +4,7 @@
     <title>List Employees</title>
 </head>
 <body>
-<h2>Employees:</h2>
+<h2>Orders gruped by employee:</h2>
 <div>
     <table>
         <tr>
@@ -22,10 +22,21 @@
                                 <c:param name="orderId" value="${singleOrder.id}"/>
                             </c:url>
 
+                            <c:url var="update" value="/orders/orderUpdate">
+                                <c:param name="orderId" value="${singleOrder.id}"/>
+                            </c:url>
+
+                            <c:url var="delete" value="/orders/orderDelete">
+                                <c:param name="orderId" value="${singleOrder.id}"/>
+                            </c:url>
+
+
                             <td>${singleOrder.id}</td>
                             <td>${singleOrder.discountPercent}</td>
                             <td>${singleOrder.totalValue}</td>
-                            <td><a href="${showSingleOrder}" >show Order</a> </td>
+                            <td><a href="${showSingleOrder}" >show Order items</a> </td>
+                            <td><a href="${update}" >update</a> </td>
+                            <td><a href="${delete}" >delete</a> </td>
 
                         </c:forEach>
                     </tr>
@@ -34,11 +45,6 @@
         </c:forEach>
     </table>
 </div>
-<div>
-    <input type="button" value="Back to menu"
-           onclick="window.location.href='backToMenu';return false;" />
-</div>
-
 </body>
 
 </html>

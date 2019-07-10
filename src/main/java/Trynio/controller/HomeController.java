@@ -18,6 +18,10 @@ public class HomeController
     public String indexPage(ModelMap model) {
         return "index";
     }
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    public String indexPageAgain(ModelMap model) {
+        return "index";
+    }
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public String adminPage(ModelMap model) {
@@ -42,8 +46,30 @@ public class HomeController
         return "redirect:/orders/showOrders";
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @RequestMapping(value = "/showEmployee", method = RequestMethod.GET)
     public String showEmployee(ModelMap model) {
         return "redirect:/employees/list";
+    }
+
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @RequestMapping(value = "/tryManageOrderItem", method = RequestMethod.GET)
+    public String tryAddOrderItem(ModelMap model)
+    {
+        return "redirect:/orderItem/list";
+    }
+
+    @PreAuthorize("hasRole('ROLE_USER')")
+    @RequestMapping(value = "/showLoginUser", method = RequestMethod.GET)
+    public String logAsUser(ModelMap model)
+    {
+        return "redirect:/user";
+    }
+
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @RequestMapping(value = "/showLoginAdmin", method = RequestMethod.GET)
+    public String logAsAdmin(ModelMap model)
+    {
+        return "redirect:/admin";
     }
 }

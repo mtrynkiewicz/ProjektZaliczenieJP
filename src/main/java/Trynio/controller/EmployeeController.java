@@ -56,9 +56,6 @@ public class EmployeeController
         {
             if(_p.getName().equals(p.getName()))
             {
-                System.out.println(_p.getId());
-                System.out.println(_p.getName());
-                System.out.println(_p.toString());
                 e.setProffession(_p);
             }
         }

@@ -59,7 +59,7 @@ public final class user_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <form action = \"showOrders\" method = \"GET\">\r\n");
       out.write("            <input type = \"submit\" value = \"Pokaz zamowienia\" />\r\n");
       out.write("        </form>\r\n");
-      out.write("    </tr>s\r\n");
+      out.write("    </tr>\r\n");
       out.write("    <tr></tr>\r\n");
       out.write("    <tr>\r\n");
       out.write("        <form id=\"logout\" action=\"");

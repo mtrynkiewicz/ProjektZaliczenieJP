@@ -12,14 +12,20 @@
     <tr>Witaj</tr>
     <tr>
         <form action = "showEmployee" method = "GET">
-            <input type = "submit" value = "Pokaz liste uzytkownikow" />
+            <input type = "submit" value = "Zarzadzaj Uzytkownikami" />
         </form>
     </tr>
     <tr>
         <form action = "showOrders" method = "GET">
-            <input type = "submit" value = "Pokaz zamowienia" />
+            <input type = "submit" value = "Zarzadzaj Zamowieniami" />
         </form>
     </tr>
+    <tr>
+        <form action = "tryManageOrderItem" method = "GET">
+            <input type = "submit" value = "Zarzadzaj Produkatami" />
+        </form>
+    </tr>
+
 </table>
 </body>
 </html>

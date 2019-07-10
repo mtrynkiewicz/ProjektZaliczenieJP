@@ -27,28 +27,6 @@ public class order
     @Column(name = "totalValue")
     private float totalValue;
 
-//    @OneToMany(fetch = FetchType.LAZY,mappedBy = "singleOrder",
-//            cascade = CascadeType.ALL)
-//    private List<orderPosition> orderPositions;
-//
-//    public void setOrderPositions(List<orderPosition> positions) {
-//        this.orderPositions= positions;
-//    }
-//
-//    public void addEmployees(orderPosition position)
-//    {
-//        if(orderPositions== null)
-//        {
-//            orderPositions= new ArrayList<>();
-//        }
-//        orderPositions.add(position);
-//    }
-//
-//    public List<orderPosition> getOrderPositions() {
-//        return orderPositions;
-//    }
-
-
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name="orderPositions",
@@ -59,13 +37,11 @@ public class order
     public void addItem(orderItem item){
         if (items == null)
             items = new HashSet<>();
-        //autor.addKsiazka(this);
         items.add(item);
     }
     public void removeItem(orderItem item){
         if (items == null)
             return;
-        //autor.addKsiazka(this);
         items.remove(item);
     }
 

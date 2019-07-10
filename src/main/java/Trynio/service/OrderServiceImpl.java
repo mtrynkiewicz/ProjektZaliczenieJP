@@ -48,4 +48,18 @@ public class OrderServiceImpl implements OrderService
         return orderDao.getSingleOrderById(id);
     }
 
+    @Override
+    @Transactional
+    public void saveOrder(order o)
+    {
+        orderDao.saveOrder(o);
+    }
+
+    @Override
+    @Transactional
+    public void deleteOrder(order o)
+    {
+        orderDao.deleteOrder(o);
+    }
+
 }
